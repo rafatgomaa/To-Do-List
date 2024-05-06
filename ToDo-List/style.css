@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+form {
+	display: flex;
+	margin-bottom: 40px;
+}
+
+form input[type="text"] {
+	flex-grow: 1;
+	padding: 10px;
+	border: none;
+	border-radius: 5px 0 0 5px;
+}
+
+form button {
+	padding: 10px;
+	border: none;
+	background-color: #333;
+	color: #fff;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+}
+
+.task-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.task-list h2 {
+	flex-basis: 100%;
+	margin: 20px 0 10px;
+}
+
+.task-list ul {
+	flex-basis: 49%;
+	background-color: #f2f2f2;
+	padding: 10px;
+	border-radius: 5px;
+	overflow-y: scroll;
+	max-height: 400px;
+}
+
+.task-list ul li {
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.task-list ul li:last-child {
+	margin-bottom: 0;
+}
+
+.task-list ul li span {
+	flex-grow: 1;
+	margin-right: 10px;
+}
+
+.task-list ul li button {
+	background-color: #333;
+	color: #fff;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.task-list ul li button:hover {
+	background-color: #555;
+}
+
+.task-list ul li input[type="checkbox"] {
+	margin-right: 10px;
+}
